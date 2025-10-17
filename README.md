@@ -1,0 +1,7 @@
+- How run: `dotnet run --urls http://localhost:5000`
+- Swagger: `http://localhost:5000/swagger`
+- Smoke test:
+  - macOS: `chmod +x script_test/smoke_mac.sh && BASE_URL=http://localhost:5000 ./script_test/smoke_mac.sh`
+  - Linux: `chmod +x script_test/smoke_linux.sh && BASE_URL=http://localhost:5000 ./script_test/smoke_linux.sh`
+  - Windows PowerShell: `PowerShell -ExecutionPolicy Bypass -File .\script_test\smoke_win.ps1 -BaseUrl http://localhost:5000`
+  - Windows CMD wrapper: `script_test\smoke_win.cmd http://localhost:5000`
